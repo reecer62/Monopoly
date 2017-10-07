@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HackUpstateX.iml" filepath="$PROJECT_DIR$/HackUpstateX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Monopoly.iml" filepath="$PROJECT_DIR$/Monopoly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
