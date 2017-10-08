@@ -13,7 +13,6 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class StartNewGameActivity extends AppCompatActivity implements View.OnClickListener {
-    Intent intent = new Intent(StartNewGameActivity.this, HostLobbyActivity.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +29,7 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             case  R.id.buttonNext: {
+                Intent intent = new Intent(StartNewGameActivity.this, HostLobbyActivity.class);
                 EditText editTextUsername = (EditText) findViewById(R.id.editTextUsername);
                 String username = editTextUsername.getText().toString();
                 EditText editTextNumPlayers = (EditText) findViewById(R.id.editTextNumPlayers);
