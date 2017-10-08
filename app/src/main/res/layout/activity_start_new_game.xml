@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reece.hackupstatex.StartNewGameActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="STUFF CAN GO HERE I DON'T KNOW WHAT WILL GO HERE BUT THIS IS THE START NEW GAME MENU PROBABLY SOME SETTINGS SUCH AS THE NUMBER OF PLAYERS THAT WILL BE IN THIS GAME, ALONG WITH MAKING THE ACTUAL BOARD LAYOUT, SO WE WILL PROBABLY NEED A MAP IN HERE!!!!!!!!!!!!!!!!!!!!!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
