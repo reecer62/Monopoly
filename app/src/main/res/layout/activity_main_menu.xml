@@ -10,41 +10,44 @@
         android:id="@+id/buttonStart"
         android:layout_width="200sp"
         android:layout_height="75sp"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="16sp"
         android:layout_marginRight="16sp"
         android:onClick="sendMessage"
         android:text="Start New Game"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJoin"
         app:layout_constraintHorizontal_bias="0.502"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonJoin" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/buttonJoin"
         android:layout_width="200sp"
         android:layout_height="75sp"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="16sp"
         android:layout_marginRight="16sp"
         android:text="Join Existing Game"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSettings"
         app:layout_constraintHorizontal_bias="0.502"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSettings" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/buttonSettings"
         android:layout_width="200sp"
         android:layout_height="75sp"
+        android:layout_marginBottom="108dp"
         android:layout_marginLeft="16sp"
         android:layout_marginRight="16sp"
         android:text="Settings"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="108dp" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/textViewTitle"
