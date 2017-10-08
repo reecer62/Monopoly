@@ -17,13 +17,13 @@ public class ClientTest {
 
     public static void main(String[] args) {
         //Set host to my computer
-        String hostName = "localhost";
-        //String hostName = "10.10.60.191";
+        //String hostName = "localhost";
+        String host_Name = "10.10.60.212";
         //String hostName = "10.241.33.253";
 
         try {
             //Open a socket
-            Socket skt = new Socket(hostName, PORT);
+            Socket skt = new Socket(host_Name, PORT);
             //Open an output stream to the socket
             PrintWriter outToServer = new PrintWriter(skt.getOutputStream(), true); //Sets autoFlush() to true so you don't have to flush the output stream every time you print to server
             //Open an input stream from the socket
@@ -51,11 +51,11 @@ public class ClientTest {
             }
         } catch (UnknownHostException uhe) {
             //Can't find host
-            System.err.println("Don't know the h*ckin host " + hostName);
+            System.err.println("Don't know the h*ckin host " + host_Name);
             System.exit(1);
         } catch (IOException ioe) {
             //IO error
-            System.err.println("I/O error in connecting to " + hostName);
+            System.err.println("I/O error in connecting to " + host_Name);
             System.exit(1);
         }
 
