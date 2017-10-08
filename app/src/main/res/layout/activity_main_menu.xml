@@ -57,12 +57,12 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="Monopoly Title!"
+        android:gravity="center"
+        android:text="GPS Property Buying Game Where the GPS Isn't Implemented Yet But Will Be Soonᵀᴹ!"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonStart"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:textSize="50sp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
