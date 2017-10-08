@@ -32,6 +32,8 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
                 Intent intent = new Intent(StartNewGameActivity.this, HostLobbyActivity.class);
                 EditText editTextUsername = (EditText) findViewById(R.id.editTextUsername);
                 String username = editTextUsername.getText().toString();
+                EditText editTextLobbyName = (EditText) findViewById(R.id.editTextLobbyName);
+                String lobbyName = editTextLobbyName.getText().toString();
                 EditText editTextNumPlayers = (EditText) findViewById(R.id.editTextNumPlayers);
                 int numPlayers;
                 try {
@@ -41,9 +43,11 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
                     numPlayers = 1;
                 }
                 editTextUsername.getText().clear();
+                editTextLobbyName.getText().clear();
                 editTextNumPlayers.getText().clear();
                 Bundle bundle = new Bundle();
                 bundle.putString("username", username);
+                bundle.putString("lobbyName", lobbyName);
                 bundle.putInt("numPlayers", numPlayers);
                 intent.putExtras(bundle);
                 startActivity(intent);
