@@ -30,8 +30,8 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
         switch (v.getId()) {
             case  R.id.buttonNext: {
                 Intent intent = new Intent(StartNewGameActivity.this, HostLobbyActivity.class);
-                EditText editTextUsername = (EditText) findViewById(R.id.editTextUsername);
-                String username = editTextUsername.getText().toString();
+                EditText editTextHostName = (EditText) findViewById(R.id.editTextHostName);
+                String hostName = editTextHostName.getText().toString();
                 EditText editTextLobbyName = (EditText) findViewById(R.id.editTextLobbyName);
                 String lobbyName = editTextLobbyName.getText().toString();
                 EditText editTextNumPlayers = (EditText) findViewById(R.id.editTextNumPlayers);
@@ -42,11 +42,11 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
                     //TODO: make an alert dialogue box pop up saying that this can't be done
                     numPlayers = 1;
                 }
-                editTextUsername.getText().clear();
+                editTextHostName.getText().clear();
                 editTextLobbyName.getText().clear();
                 editTextNumPlayers.getText().clear();
                 Bundle bundle = new Bundle();
-                bundle.putString("username", username);
+                bundle.putString("hostName", hostName);
                 bundle.putString("lobbyName", lobbyName);
                 bundle.putInt("numPlayers", numPlayers);
                 intent.putExtras(bundle);
