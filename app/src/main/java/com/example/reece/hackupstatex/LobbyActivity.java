@@ -65,7 +65,7 @@ public class LobbyActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case  R.id.buttonRunGame: {
-                //here
+                //Calls createAGame only called once per client because each connects only once
                 break;
             }
 
