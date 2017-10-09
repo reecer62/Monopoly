@@ -1,11 +1,9 @@
 package com.example.reece.hackupstatex;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class LobbyActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,7 +15,7 @@ public class LobbyActivity extends AppCompatActivity implements View.OnClickList
         int numPlayers;
         String clientName;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_host_lobby);
+        setContentView(R.layout.activity_lobby);
 
 
         Bundle bundle = getIntent().getExtras();

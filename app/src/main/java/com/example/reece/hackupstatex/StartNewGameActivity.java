@@ -25,7 +25,7 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
         switch (v.getId()) {
             case  R.id.buttonNext: {
                 Intent intent = new Intent(StartNewGameActivity.this, LobbyActivity.class);
-                EditText editTextHostName = (EditText) findViewById(R.id.editTextHostName);
+                EditText editTextHostName = (EditText) findViewById(R.id.editTextClientName);
                 String hostName = editTextHostName.getText().toString();
                 EditText editTextLobbyName = (EditText) findViewById(R.id.editTextLobbyName);
                 String lobbyName = editTextLobbyName.getText().toString();
