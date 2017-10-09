@@ -8,13 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class HostLobbyActivity extends AppCompatActivity implements View.OnClickListener {
+public class LobbyActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         String hostName;
         String lobbyName;
         int numPlayers;
+        String clientName;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host_lobby);
 
@@ -25,17 +26,27 @@ public class HostLobbyActivity extends AppCompatActivity implements View.OnClick
                 hostName = bundle.getString("hostName");
                 lobbyName = bundle.getString("lobbyName");
                 numPlayers = bundle.getInt("numPlayers");
+                //These Variables will be removed once we implement retrieving data from the server
+                clientName = "Default Client Name";
+            } else if (bundle.containsKey("clientName") && bundle.containsKey("lobbyName")) {
+                clientName = bundle.getString("clientName");
+                lobbyName = bundle.getString("lobbyName");
+                //These Variables will be removed once we implement retrieving data from the server
+                hostName = "Default Host Name";
+                numPlayers = 1;
             } else {
                 //TODO: make an alert dialogue box pop up saying that this can't be done
                 hostName = "Default Host Name Inner";
                 lobbyName = "Default Lobby Name Inner";
                 numPlayers = 1;
+                clientName = "Default Client Name Inner";
             }
         } else {
             //TODO: make an alert dialogue box pop up saying that this can't be done
             hostName = "Default Host Name Outer";
             lobbyName = "Default Lobby Name Outer";
             numPlayers = 1;
+            clientName = "Default Client Name Outer";
         }
 
         TextView textViewLobbyName = (TextView) findViewById(R.id.textViewLobbyName);

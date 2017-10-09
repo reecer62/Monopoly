@@ -8,8 +8,6 @@ import android.widget.Button;
 
 public class MainMenuActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "com.example.reece.MESSAGE";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,16 +1,11 @@
 package com.example.reece.hackupstatex;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class StartNewGameActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,7 +24,7 @@ public class StartNewGameActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             case  R.id.buttonNext: {
-                Intent intent = new Intent(StartNewGameActivity.this, HostLobbyActivity.class);
+                Intent intent = new Intent(StartNewGameActivity.this, LobbyActivity.class);
                 EditText editTextHostName = (EditText) findViewById(R.id.editTextHostName);
                 String hostName = editTextHostName.getText().toString();
                 EditText editTextLobbyName = (EditText) findViewById(R.id.editTextLobbyName);
