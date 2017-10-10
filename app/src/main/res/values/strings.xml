@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">HackUpstateX</string>
     <string name="title_activity_addresses">GameMap</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main_game">MainGameActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.reece.hackupstatex;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -75,6 +76,7 @@ public class LobbyActivity extends AppCompatActivity implements View.OnClickList
                 //Calls connectToHost, only called once per client because each connects only once
 
                 //Get host name from user
+                /*
                 String host_Name = bundle.getString("hostName");
                 //Port number that is going to be used
                 int port = 7001;
@@ -94,6 +96,8 @@ public class LobbyActivity extends AppCompatActivity implements View.OnClickList
                     System.err.println("I/O error in connecting to " + host_Name);
                     System.exit(1);
                 }
+                */
+                startActivity(new Intent(LobbyActivity.this, MainGameActivity.class));
                 break;
             }
 
