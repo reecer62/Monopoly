@@ -19,8 +19,7 @@ public class RollActivity extends AppCompatActivity implements View.OnClickListe
 
         ImageView imageViewDie = (ImageView) findViewById(R.id.imageViewDie);
         TextView textViewDie = (TextView) findViewById(R.id.textViewDie);
-        //int rollResult = (int) Math.random() * 6 + 1;
-        int rollResult = 3;
+        int rollResult = (int) (Math.random() * 6 + 1);
         switch(rollResult) {
             case 1: {
                 imageViewDie.setImageResource(R.drawable.d1);
